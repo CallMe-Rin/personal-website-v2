@@ -4,8 +4,9 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
 }
 
 model Education {
@@ -22,4 +23,12 @@ model Experience {
   jobTitle      String
   startYear     Int
   endYear       Int
+}
+
+model Project {
+  id            String   @id @default(uuid())
+  title         String
+  description   String
+  image         String
+  github        String
 }

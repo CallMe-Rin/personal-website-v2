@@ -15,7 +15,11 @@ export default function Education() {
     const fetchEducation = async () => {
       try {
         const res = await getEducation();
-        setData(res);
+        const sorted = [...res].sort((a, b) => {
+          if (b.endYear !== a.endYear) return b.endYear - a.endYear;
+          return b.startYear - a.startYear;
+        });
+        setData(sorted);
       } catch (error) {
         console.error(error);
       } finally {

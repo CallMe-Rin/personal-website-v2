@@ -1,5 +1,5 @@
 import { PrismaClient } from "@prisma/client";
-import { education, experience } from "../src/data/data ";
+import { education, experience, project } from "../src/data/data ";
 
 const prisma = new PrismaClient();
 
@@ -15,6 +15,13 @@ async function main() {
     data: experience,
     skipDuplicates: true,
   });
+
+  // Project
+  await prisma.project.deleteMany();
+
+  // lalu insert ulang
+  await prisma.project.createMany({
+    data: project,
 }
 
 main()

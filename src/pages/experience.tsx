@@ -12,10 +12,15 @@ export default function Experience() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fetchEducation = async () => {
+    const fetchExperience = async () => {
       try {
         const res = await getExperiece();
-        setData(res);
+        const sorted = [...res].sort((a, b) => {
+          if (b.endYear !== a.endYear) return b.endYear - a.endYear;
+          return b.startYear - a.startYear;
+        });
+
+        setData(sorted);
       } catch (error) {
         console.error(error);
       } finally {
@@ -23,7 +28,7 @@ export default function Experience() {
       }
     };
 
-    fetchEducation();
+    fetchExperience();
   }, []);
 
   return (

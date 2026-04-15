@@ -7,6 +7,9 @@ import About from "@/pages/about";
 import Education from "@/pages/education";
 import Skill from "@/pages/skill";
 import Experience from "@/pages/experience";
+import Project from "@/pages/project";
+import Services from "@/pages/service";
+import Contact from "@/pages/contact";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -30,6 +33,9 @@ export default function Home() {
           <Education />
           <Skill />
           <Experience />
+          <Project />
+          <Services />
+          <Contact />
         </>
       )}
     </>
