@@ -10,12 +10,12 @@ import ExpressJS from "@/assets/express-js.png";
 import Git from "@/assets/git.png";
 import HTML from "@/assets/html-5.png";
 import JS from "@/assets/js.png";
-import Typescript from "@/assets/TypeScript.png";
-import Nextjs from "@/assets/Next.js.png";
+import Typescript from "@/assets/typeScript.png";
+import Nextjs from "@/assets/nextjs.png";
 import Nodejs from "@/assets/nodejs.png";
 import Postgre from "@/assets/postgreSQL.png";
-import Postman from "@/assets/Postman.png";
-import Tailwind from "@/assets/TailwindCSS.png";
+import Postman from "@/assets/postman.png";
+import Tailwind from "@/assets/tailwindCSS.png";
 
 const skills = [
   { name: "ExpressJS", image: ExpressJS },
