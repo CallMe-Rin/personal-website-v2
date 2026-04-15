@@ -1,7 +1,7 @@
 export interface Experience {
   id: number;
   company: string;
-  JobTitle: string;
+  jobTitle: string;
   startYear: number;
   endYear: number;
 }
