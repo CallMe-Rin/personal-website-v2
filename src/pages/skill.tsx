@@ -10,7 +10,7 @@ import ExpressJS from "@/assets/express-js.png";
 import Git from "@/assets/git.png";
 import HTML from "@/assets/html-5.png";
 import JS from "@/assets/js.png";
-import Typescript from "@/assets/typeScript.png";
+import Typescript from "@/assets/typescriptlogo.png";
 import Nextjs from "@/assets/nextjs.png";
 import Nodejs from "@/assets/nodejs.png";
 import Postgre from "@/assets/postgreSQL.png";
