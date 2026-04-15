@@ -11,11 +11,11 @@ import Git from "@/assets/git.png";
 import HTML from "@/assets/html-5.png";
 import JS from "@/assets/js.png";
 import Typescript from "@/assets/TypeScript.png";
-import nextjs from "@/assets/Next.js.png";
-import nodejs from "@/assets/nodejs.png";
-import postgre from "@/assets/postgreSQL.png";
-import postman from "@/assets/Postman.png";
-import tailwind from "@/assets/TailwindCSS.png";
+import Nextjs from "@/assets/Next.js.png";
+import Nodejs from "@/assets/nodejs.png";
+import Postgre from "@/assets/postgreSQL.png";
+import Postman from "@/assets/Postman.png";
+import Tailwind from "@/assets/TailwindCSS.png";
 
 const skills = [
   { name: "ExpressJS", image: ExpressJS },
@@ -23,13 +23,14 @@ const skills = [
   { name: "HTML", image: HTML },
   { name: "CSS", image: CSS },
   { name: "Bootstrap", image: Boostrap },
-  { name: "Tailwind", image: tailwind },
+  { name: "Tailwind", image: Tailwind },
   { name: "Javascript", image: JS },
   { name: "Typescript", image: Typescript },
-  { name: "Next JS", image: nextjs },
-  { name: "Node JS", image: nodejs },
-  { name: "PostgreSQL", image: postgre },
-  { name: "Postman", image: postman },
+  { name: "Next JS", image: Nextjs },
+  { name: "Node JS", image: Nodejs },
+  { name: "PostgreSQL", image: Postgre },
+  { name: "Postman", image: Postman },
+  { name: "Git", image: Git },
 ];
 
 export default function Skill() {
