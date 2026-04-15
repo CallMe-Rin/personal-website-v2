@@ -22,7 +22,7 @@ async function main() {
   // lalu insert ulang
   await prisma.project.createMany({
     data: project,
-}
+};
 
 main()
   .then(() => console.log("✅ Data berhasil di-import"))
