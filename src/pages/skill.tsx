@@ -15,7 +15,7 @@ import Nextjs from "@/assets/nextjs.png";
 import Nodejs from "@/assets/nodejs.png";
 import Postgre from "@/assets/postgreSQL.png";
 import Postman from "@/assets/postman.png";
-import Tailwind from "@/assets/tailwindCSS.png";
+import Tailwind from "@/assets/tailwind.png";
 
 const skills = [
   { name: "ExpressJS", image: ExpressJS },
