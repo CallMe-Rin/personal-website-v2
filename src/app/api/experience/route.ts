@@ -5,6 +5,6 @@ export async function GET() {
   const data = await prisma.experience.findMany();
 
   return NextResponse.json({
-    education: data,
+    experience: data,
   });
 }

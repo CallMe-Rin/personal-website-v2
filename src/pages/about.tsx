@@ -22,7 +22,7 @@ export default function About() {
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Text */}
         <div className="text-center md:text-left">
-          <h1 className="font-['Archivo_Black'] font-bold text-3xl sm:text-4xl md:text-5xl text-purple-600 pb-6 ml-[80]">
+          <h1 className="font-['Archivo_Black'] font-bold text-3xl sm:text-4xl md:text-[75px] text-purple-600 pb-6 ml-[80]">
             Who Am I?
           </h1>
 
@@ -46,7 +46,7 @@ export default function About() {
             alt="About Illustration"
             width={400}
             height={400}
-            className="drop-shadow-2xl"
+            className="drop-shadow-2xl hidden md:block"
             priority
           />
         </div>

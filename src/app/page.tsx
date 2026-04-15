@@ -5,6 +5,8 @@ import Loading from "../components/layout/loading";
 import Hero from "../pages/heroSection";
 import About from "@/pages/about";
 import Education from "@/pages/education";
+import Skill from "@/pages/skill";
+import Experience from "@/pages/experience";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -26,6 +28,8 @@ export default function Home() {
           <Hero />
           <About />
           <Education />
+          <Skill />
+          <Experience />
         </>
       )}
     </>
