@@ -1,5 +1,5 @@
 import { PrismaClient } from "@prisma/client";
-import { education, experience, project } from "../src/data/data";
+import { education, experience, project } from "@/data/data ";
 
 const prisma = new PrismaClient();
 
