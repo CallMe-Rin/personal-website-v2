@@ -89,9 +89,7 @@ export default function Home() {
               size="lg"
               className="px-8 w-[300] h-[50] bg-purple-700"
             >
-              <a href="/Rinaldo" download className="text-xl">
-                Download CV
-              </a>
+              <a className="text-xl">Download CV</a>
             </Button>
 
             {/* Contact */}
