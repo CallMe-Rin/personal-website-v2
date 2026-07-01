@@ -87,7 +87,7 @@ export default function Home() {
               onClick={downloadCV}
               asChild
               size="lg"
-              className="px-8 w-[300] h-[50] bg-purple-700"
+              className="px-8 w-[300] h-[50] bg-purple-700 cursor-pointer"
             >
               <a className="text-xl">Download CV</a>
             </Button>
