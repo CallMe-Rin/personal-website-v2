@@ -2,6 +2,7 @@
 
 export function downloadCV(): void {
   const link = document.createElement("a");
+
   link.href = "/files/Rinaldo.pdf";
   link.download = "Rinaldo.pdf";
 
