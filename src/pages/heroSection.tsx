@@ -4,14 +4,13 @@ import Navbar from "@/components/layout/navbar";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import RinaldoImg from "@/assets/Rinaldo.jpg";
-import { downloadCV } from "@/utils/downloadCV";
 import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
   return (
     <section
       id="home"
-      className="relative min-h-screen bg-gradient-to-br from-[#081c2f] via-[#0b2a46] to-[#081c2f] text-white overflow-hidden"
+      className="relative min-h-screen overflow-hidden bg-gradient-to-br from-[#081c2f] via-[#0b2a46] to-[#081c2f] text-white"
     >
       {/* Navbar */}
       <Navbar />
@@ -54,6 +53,7 @@ export default function Home() {
                 href="https://github.com/CallMe-Rin"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="GitHub"
               >
                 <FaGithub className="h-5 w-5 text-purple-500" />
               </a>
@@ -64,6 +64,7 @@ export default function Home() {
                 href="https://www.linkedin.com/in/rinaldodwifaturahman/"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="LinkedIn"
               >
                 <FaLinkedin className="h-5 w-5 text-purple-500" />
               </a>
@@ -74,6 +75,7 @@ export default function Home() {
                 href="https://www.instagram.com/rinaldo.faturahman/"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Instagram"
               >
                 <FaInstagram className="h-5 w-5 text-purple-500" />
               </a>
@@ -82,21 +84,22 @@ export default function Home() {
 
           {/* Buttons */}
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4 md:justify-start">
-            {/* ✅ Download CV */}
+            {/* Download CV */}
             <Button
-              onClick={downloadCV}
               asChild
               size="lg"
-              className="px-8 w-[300] h-[50] bg-purple-700 cursor-pointer"
+              className="h-[50px] w-[300px] cursor-pointer bg-purple-700 px-8 hover:bg-purple-800"
             >
-              <a className="text-xl">Download CV</a>
+              <a href="/api/download-cv" className="text-xl">
+                Download CV
+              </a>
             </Button>
 
             {/* Contact */}
             <Button
               asChild
               size="lg"
-              className="px-8 px-8 w-[300] h-[50] bg-purple-700"
+              className="h-[50px] w-[300px] bg-purple-700 px-8 hover:bg-purple-800"
             >
               <a href="#contact" className="text-xl">
                 Contact
@@ -107,7 +110,7 @@ export default function Home() {
 
         {/* RIGHT IMAGE */}
         <div className="relative">
-          <div className="absolute inset-0 rounded-full bg-purple-500/20 blur-3xl"></div>
+          <div className="absolute inset-0 rounded-full bg-purple-500/20 blur-3xl" />
 
           <Image
             src={RinaldoImg}
